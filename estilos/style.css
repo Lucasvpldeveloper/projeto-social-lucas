@@ -19,13 +19,50 @@
     position: absolute;
  }
 
+ main {
+   position: relative;
+   height: 100vh;
+ }
+
  section#telefone {
-    position: relative;
-    height: 626px;
-    width: 311px;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
+    height: 626px;
+    width: 311px;
     background: url("/imagens/frame-iphone.png") no-repeat top center;
 }
+
+iframe#tela {
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    position: relative;
+    height: 475px;
+    width: 266px;
+    background-size: cover;
+}
+
+section#redes-sociais {
+   text-align: right;
+}
+
+section#redes-sociais img {
+   width: 50px;
+   margin: 10px;
+   border-radius: 50%;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.401);
+   box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+   border: 1px solid white;
+   transform: translate(-3px, -3px);
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.464);
+   transition: 0.5s;
+}
+
+
